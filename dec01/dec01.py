@@ -16,4 +16,5 @@ if __name__ == "__main__":
     for line in open("puzzle.txt"):
         parse_input(line)
 
-    print(max(elf_calorie.values()))
+    #print(max(elf_calorie.values()))
+    print(sum(sorted(elf_calorie.values(), reverse=True)[:3]))
